@@ -1,0 +1,77 @@
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.pdb
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.xml
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Form1.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Resources.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FInicio.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbproj.GenerateResource.Cache
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.xml
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCliente.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoClientes.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCategoria.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoProductos.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FProducto.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCargo.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FEmpleado.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoEmpleados.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FUsuario.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FVenta.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbprojResolveAssemblyReference.cache
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FComprobante.resources
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.cache
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.compiled
+F:\archivos de jose\Ejercicios Propuestos\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoVentas.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.xml
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.pdb
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.xml
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbprojResolveAssemblyReference.cache
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Form1.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Resources.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCargo.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCategoria.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCliente.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FEmpleado.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FInicio.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoClientes.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoEmpleados.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoProductos.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoVentas.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FProducto.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FUsuario.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FVenta.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FComprobante.resources
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbproj.GenerateResource.Cache
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.cache
+G:\datos\sistemaventa\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.compiled
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.xml
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.exe
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.pdb
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\bin\Debug\SistemaVentas.xml
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Form1.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.Resources.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCargo.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCategoria.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FCliente.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FEmpleado.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FInicio.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoClientes.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoEmpleados.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoProductos.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FListadoVentas.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FProducto.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FUsuario.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FVenta.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.FComprobante.resources
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbproj.GenerateResource.Cache
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.cache
+C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.compiled

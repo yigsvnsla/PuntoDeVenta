@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7709B68C-635F-45AE-8326-16A7DB7097A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaVentas.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaVentas</RootNamespace>
+    <AssemblyName>SistemaVentas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaVentas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaVentas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="datosventas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datosventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DCargo.vb" />
+    <Compile Include="Datos\DCategoria.vb" />
+    <Compile Include="Datos\DCliente.vb" />
+    <Compile Include="Datos\Dconexion.vb" />
+    <Compile Include="Datos\DDetalleVenta.vb" />
+    <Compile Include="Datos\DEmpleado.vb" />
+    <Compile Include="Datos\DProductos.vb" />
+    <Compile Include="Datos\DUsuarios.vb" />
+    <Compile Include="Datos\DVenta.vb" />
+    <Compile Include="dbventasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbventasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logica\LCargo.vb" />
+    <Compile Include="Logica\LCategoria.vb" />
+    <Compile Include="Logica\LCliente.vb" />
+    <Compile Include="Logica\LDetalleVenta.vb" />
+    <Compile Include="Logica\LEmpleados.vb" />
+    <Compile Include="Logica\LProductos.vb" />
+    <Compile Include="Logica\LUsuario.vb" />
+    <Compile Include="Logica\LVenta.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\FCargo.Designer.vb">
+      <DependentUpon>FCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FCategoria.Designer.vb">
+      <DependentUpon>FCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FCliente.Designer.vb">
+      <DependentUpon>FCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FEmpleado.Designer.vb">
+      <DependentUpon>FEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FInicio.Designer.vb">
+      <DependentUpon>FInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FListadoClientes.Designer.vb">
+      <DependentUpon>FListadoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FListadoClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FListadoEmpleados.Designer.vb">
+      <DependentUpon>FListadoEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FListadoEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FListadoProductos.Designer.vb">
+      <DependentUpon>FListadoProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FListadoProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FListadoVentas.Designer.vb">
+      <DependentUpon>FListadoVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FListadoVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FProducto.Designer.vb">
+      <DependentUpon>FProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FUsuario.Designer.vb">
+      <DependentUpon>FUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FVenta.Designer.vb">
+      <DependentUpon>FVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FComprobante.Designer.vb">
+      <DependentUpon>FComprobante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FComprobante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FCargo.resx">
+      <DependentUpon>FCargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FCategoria.resx">
+      <DependentUpon>FCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FCLiente.resx">
+      <DependentUpon>FCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FEmpleado.resx">
+      <DependentUpon>FEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FInicio.resx">
+      <DependentUpon>FInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FListadoClientes.resx">
+      <DependentUpon>FListadoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FListadoEmpleados.resx">
+      <DependentUpon>FListadoEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FListadoProductos.resx">
+      <DependentUpon>FListadoProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FListadoVentas.resx">
+      <DependentUpon>FListadoVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FProducto.resx">
+      <DependentUpon>FProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FUsuario.resx">
+      <DependentUpon>FUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FVenta.resx">
+      <DependentUpon>FVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FComprobante.resx">
+      <DependentUpon>FComprobante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RReporteVenta.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="datosventas.xsc">
+      <DependentUpon>datosventas.xsd</DependentUpon>
+    </None>
+    <None Include="datosventas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datosventas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datosventas.xss">
+      <DependentUpon>datosventas.xsd</DependentUpon>
+    </None>
+    <None Include="dbventasDataSet.xsc">
+      <DependentUpon>dbventasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbventasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbventasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbventasDataSet.xss">
+      <DependentUpon>dbventasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Converted_file_bce8e43b_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Converted_file_d49d8510_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formulariosIcono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleados_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas_converted.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
