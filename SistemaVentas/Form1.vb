@@ -1,5 +1,8 @@
 ﻿Public Class Form1
+    ' declaramos dos variables que trabajaran en conjunto 
+    ' valores se encargara de almacenar los datos ingresados
     Dim valores As New LUsuario
+    ' fuciones se encargara de verificar y agregar 
     Dim funciones As New DUsuarios
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Me.Opacity = 0.83
@@ -7,12 +10,14 @@
 
     Private Sub btniniciar_Click(sender As Object, e As EventArgs) Handles btniniciar.Click
         Try
+
+            ' se almacena los datos de los TexBox en la variable valores
             valores._usuario = txtusuario.Text
             valores._contraseña = txtcontraseña.Text
 
-
+            ' Con los datos almacenados, se llama la funcion AccederUsuario, la cual recibe por parametro la variable usuario que es un LUsuario
             If funciones.AccederUsuario(valores) Then
-                MsgBox("Bienvenido al Sistema", MsgBoxStyle.Information, "Mensaje del Sistema")
+                ' Si los datos ingresados son correctos, prcedemos a abrir el Formulario de inicio "FInicio"
                 FInicio.Show()
                 Me.Hide()
 
@@ -74,5 +79,8 @@
 
     End Sub
 
-    
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
 End Class
