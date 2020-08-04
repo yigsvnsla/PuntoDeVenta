@@ -38,8 +38,11 @@ Partial Class FUsuario
         Me.txtusuario = New System.Windows.Forms.TextBox()
         Me.btbgrabar = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -51,7 +54,7 @@ Partial Class FUsuario
         Me.GroupBox1.Controls.Add(Me.txtdni)
         Me.GroupBox1.Controls.Add(Me.txtid)
         Me.GroupBox1.Controls.Add(Me.txtnya)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 21)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 56)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(379, 80)
         Me.GroupBox1.TabIndex = 0
@@ -124,7 +127,7 @@ Partial Class FUsuario
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.txtcontraseña)
         Me.GroupBox2.Controls.Add(Me.txtusuario)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 107)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 142)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(379, 62)
         Me.GroupBox2.TabIndex = 1
@@ -176,40 +179,64 @@ Partial Class FUsuario
         '
         'btbgrabar
         '
-        Me.btbgrabar.Location = New System.Drawing.Point(12, 175)
+        Me.btbgrabar.Location = New System.Drawing.Point(12, 210)
         Me.btbgrabar.Name = "btbgrabar"
-        Me.btbgrabar.Size = New System.Drawing.Size(139, 23)
+        Me.btbgrabar.Size = New System.Drawing.Size(139, 31)
         Me.btbgrabar.TabIndex = 3
-        Me.btbgrabar.Text = "Grabar"
+        Me.btbgrabar.Text = "Crear"
         Me.btbgrabar.UseVisualStyleBackColor = True
         '
         'btnsalir
         '
-        Me.btnsalir.Location = New System.Drawing.Point(238, 175)
+        Me.btnsalir.Location = New System.Drawing.Point(238, 210)
         Me.btnsalir.Name = "btnsalir"
-        Me.btnsalir.Size = New System.Drawing.Size(139, 23)
+        Me.btnsalir.Size = New System.Drawing.Size(139, 31)
         Me.btnsalir.TabIndex = 4
         Me.btnsalir.Text = "Salir"
         Me.btnsalir.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(403, 39)
+        Me.Panel1.TabIndex = 5
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label6.Location = New System.Drawing.Point(144, 4)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(115, 31)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Usuario"
         '
         'FUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(403, 207)
+        Me.ClientSize = New System.Drawing.Size(403, 253)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnsalir)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btbgrabar)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximumSize = New System.Drawing.Size(419, 241)
-        Me.MinimumSize = New System.Drawing.Size(419, 241)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FUsuario"
-        Me.Text = "FUsuario"
+        Me.Text = "Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -229,4 +256,6 @@ Partial Class FUsuario
     Friend WithEvents txtusuario As System.Windows.Forms.TextBox
     Friend WithEvents chkver As System.Windows.Forms.CheckBox
     Friend WithEvents btnsalir As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

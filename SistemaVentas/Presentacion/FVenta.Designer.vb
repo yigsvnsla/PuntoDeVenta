@@ -69,6 +69,11 @@ Partial Class FVenta
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.gbempleado.SuspendLayout()
@@ -76,12 +81,16 @@ Partial Class FVenta
         Me.GroupBox5.SuspendLayout()
         CType(Me.txtcantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.listado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.cbotipodocumento)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(548, 177)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(130, 50)
         Me.GroupBox1.TabIndex = 0
@@ -91,7 +100,7 @@ Partial Class FVenta
         'cbotipodocumento
         '
         Me.cbotipodocumento.FormattingEnabled = True
-        Me.cbotipodocumento.Items.AddRange(New Object() {"Boleta", "Factura"})
+        Me.cbotipodocumento.Items.AddRange(New Object() {"Boleta"})
         Me.cbotipodocumento.Location = New System.Drawing.Point(6, 19)
         Me.cbotipodocumento.Name = "cbotipodocumento"
         Me.cbotipodocumento.Size = New System.Drawing.Size(113, 21)
@@ -101,7 +110,7 @@ Partial Class FVenta
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.txtfecha)
-        Me.GroupBox2.Location = New System.Drawing.Point(148, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(703, 177)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(151, 50)
         Me.GroupBox2.TabIndex = 0
@@ -120,7 +129,7 @@ Partial Class FVenta
         '
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Location = New System.Drawing.Point(373, 9)
+        Me.Label1.Location = New System.Drawing.Point(17, 8)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 23)
         Me.Label1.TabIndex = 1
@@ -131,7 +140,7 @@ Partial Class FVenta
         '
         Me.Label2.BackColor = System.Drawing.Color.Yellow
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Location = New System.Drawing.Point(373, 31)
+        Me.Label2.Location = New System.Drawing.Point(17, 30)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(115, 23)
         Me.Label2.TabIndex = 1
@@ -142,7 +151,7 @@ Partial Class FVenta
         '
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Location = New System.Drawing.Point(373, 53)
+        Me.Label3.Location = New System.Drawing.Point(17, 52)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 23)
         Me.Label3.TabIndex = 1
@@ -153,7 +162,7 @@ Partial Class FVenta
         '
         Me.lblnrodoc.AutoSize = True
         Me.lblnrodoc.BackColor = System.Drawing.Color.White
-        Me.lblnrodoc.Location = New System.Drawing.Point(418, 58)
+        Me.lblnrodoc.Location = New System.Drawing.Point(62, 57)
         Me.lblnrodoc.Name = "lblnrodoc"
         Me.lblnrodoc.Size = New System.Drawing.Size(13, 13)
         Me.lblnrodoc.TabIndex = 2
@@ -167,7 +176,7 @@ Partial Class FVenta
         Me.gbempleado.Controls.Add(Me.Label4)
         Me.gbempleado.Controls.Add(Me.txtnya)
         Me.gbempleado.Controls.Add(Me.txtcargo)
-        Me.gbempleado.Location = New System.Drawing.Point(12, 68)
+        Me.gbempleado.Location = New System.Drawing.Point(547, 331)
         Me.gbempleado.Name = "gbempleado"
         Me.gbempleado.Size = New System.Drawing.Size(307, 76)
         Me.gbempleado.TabIndex = 3
@@ -235,7 +244,8 @@ Partial Class FVenta
         Me.gbcliente.Controls.Add(Me.btnbuscarC)
         Me.gbcliente.Controls.Add(Me.Label7)
         Me.gbcliente.Controls.Add(Me.Label6)
-        Me.gbcliente.Location = New System.Drawing.Point(12, 150)
+        Me.gbcliente.Controls.Add(Me.lblidproducto)
+        Me.gbcliente.Location = New System.Drawing.Point(548, 233)
         Me.gbcliente.Name = "gbcliente"
         Me.gbcliente.Size = New System.Drawing.Size(307, 83)
         Me.gbcliente.TabIndex = 3
@@ -309,7 +319,7 @@ Partial Class FVenta
         Me.GroupBox5.Controls.Add(Me.Label8)
         Me.GroupBox5.Controls.Add(Me.txtdescripcion)
         Me.GroupBox5.Controls.Add(Me.txtproducto)
-        Me.GroupBox5.Location = New System.Drawing.Point(12, 239)
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 21)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(476, 84)
         Me.GroupBox5.TabIndex = 4
@@ -421,7 +431,7 @@ Partial Class FVenta
         '
         'txtidventa
         '
-        Me.txtidventa.Location = New System.Drawing.Point(375, 87)
+        Me.txtidventa.Location = New System.Drawing.Point(19, 86)
         Me.txtidventa.Name = "txtidventa"
         Me.txtidventa.Size = New System.Drawing.Size(106, 20)
         Me.txtidventa.TabIndex = 5
@@ -436,7 +446,7 @@ Partial Class FVenta
         Me.listado.AllowUserToResizeRows = False
         Me.listado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.listado.Location = New System.Drawing.Point(12, 329)
+        Me.listado.Location = New System.Drawing.Point(12, 111)
         Me.listado.MultiSelect = False
         Me.listado.Name = "listado"
         Me.listado.ReadOnly = True
@@ -447,7 +457,7 @@ Partial Class FVenta
         'lblidproducto
         '
         Me.lblidproducto.AutoSize = True
-        Me.lblidproducto.Location = New System.Drawing.Point(325, 220)
+        Me.lblidproducto.Location = New System.Drawing.Point(12, 63)
         Me.lblidproducto.Name = "lblidproducto"
         Me.lblidproducto.Size = New System.Drawing.Size(13, 13)
         Me.lblidproducto.TabIndex = 13
@@ -456,7 +466,7 @@ Partial Class FVenta
         '
         'btneliminar
         '
-        Me.btneliminar.Location = New System.Drawing.Point(210, 537)
+        Me.btneliminar.Location = New System.Drawing.Point(210, 319)
         Me.btneliminar.Name = "btneliminar"
         Me.btneliminar.Size = New System.Drawing.Size(75, 23)
         Me.btneliminar.TabIndex = 14
@@ -465,7 +475,7 @@ Partial Class FVenta
         '
         'btnregistrar
         '
-        Me.btnregistrar.Location = New System.Drawing.Point(291, 537)
+        Me.btnregistrar.Location = New System.Drawing.Point(291, 319)
         Me.btnregistrar.Name = "btnregistrar"
         Me.btnregistrar.Size = New System.Drawing.Size(116, 23)
         Me.btnregistrar.TabIndex = 14
@@ -474,7 +484,7 @@ Partial Class FVenta
         '
         'btnsalir
         '
-        Me.btnsalir.Location = New System.Drawing.Point(413, 537)
+        Me.btnsalir.Location = New System.Drawing.Point(413, 319)
         Me.btnsalir.Name = "btnsalir"
         Me.btnsalir.Size = New System.Drawing.Size(75, 23)
         Me.btnsalir.TabIndex = 14
@@ -484,7 +494,7 @@ Partial Class FVenta
         '
         'txttotal
         '
-        Me.txttotal.Location = New System.Drawing.Point(399, 502)
+        Me.txttotal.Location = New System.Drawing.Point(399, 284)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.ReadOnly = True
         Me.txttotal.Size = New System.Drawing.Size(89, 20)
@@ -492,7 +502,7 @@ Partial Class FVenta
         '
         'txtigv
         '
-        Me.txtigv.Location = New System.Drawing.Point(275, 502)
+        Me.txtigv.Location = New System.Drawing.Point(275, 284)
         Me.txtigv.Name = "txtigv"
         Me.txtigv.ReadOnly = True
         Me.txtigv.Size = New System.Drawing.Size(79, 20)
@@ -500,7 +510,7 @@ Partial Class FVenta
         '
         'txtsubtotal
         '
-        Me.txtsubtotal.Location = New System.Drawing.Point(148, 502)
+        Me.txtsubtotal.Location = New System.Drawing.Point(148, 284)
         Me.txtsubtotal.Name = "txtsubtotal"
         Me.txtsubtotal.ReadOnly = True
         Me.txtsubtotal.Size = New System.Drawing.Size(87, 20)
@@ -509,7 +519,7 @@ Partial Class FVenta
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(89, 505)
+        Me.Label13.Location = New System.Drawing.Point(89, 287)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 13)
         Me.Label13.TabIndex = 17
@@ -518,7 +528,7 @@ Partial Class FVenta
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(241, 505)
+        Me.Label14.Location = New System.Drawing.Point(241, 287)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(28, 13)
         Me.Label14.TabIndex = 17
@@ -527,44 +537,93 @@ Partial Class FVenta
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(361, 505)
+        Me.Label15.Location = New System.Drawing.Point(361, 287)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(34, 13)
         Me.Label15.TabIndex = 17
         Me.Label15.Text = "Total:"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Panel1.Controls.Add(Me.Label16)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(871, 39)
+        Me.Panel1.TabIndex = 18
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(383, 4)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(88, 31)
+        Me.Label16.TabIndex = 5
+        Me.Label16.Text = "CAJA"
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.txtidventa)
+        Me.Panel2.Controls.Add(Me.lblnrodoc)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Location = New System.Drawing.Point(557, 51)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(148, 114)
+        Me.Panel2.TabIndex = 19
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Controls.Add(Me.Label14)
+        Me.GroupBox3.Controls.Add(Me.Label13)
+        Me.GroupBox3.Controls.Add(Me.txtsubtotal)
+        Me.GroupBox3.Controls.Add(Me.txtigv)
+        Me.GroupBox3.Controls.Add(Me.txttotal)
+        Me.GroupBox3.Controls.Add(Me.btnsalir)
+        Me.GroupBox3.Controls.Add(Me.btnregistrar)
+        Me.GroupBox3.Controls.Add(Me.btneliminar)
+        Me.GroupBox3.Controls.Add(Me.listado)
+        Me.GroupBox3.Controls.Add(Me.GroupBox5)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 66)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(507, 354)
+        Me.GroupBox3.TabIndex = 20
+        Me.GroupBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SistemaVentas.My.Resources.Resources.dibujos_animados_san_jose_76844_1209
+        Me.PictureBox1.Location = New System.Drawing.Point(723, 51)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(132, 120)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 21
+        Me.PictureBox1.TabStop = False
         '
         'FVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(505, 568)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.txtsubtotal)
-        Me.Controls.Add(Me.txtigv)
-        Me.Controls.Add(Me.txttotal)
-        Me.Controls.Add(Me.btnsalir)
-        Me.Controls.Add(Me.btnregistrar)
-        Me.Controls.Add(Me.btneliminar)
-        Me.Controls.Add(Me.lblidproducto)
-        Me.Controls.Add(Me.listado)
-        Me.Controls.Add(Me.txtidventa)
-        Me.Controls.Add(Me.GroupBox5)
+        Me.ClientSize = New System.Drawing.Size(871, 432)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.gbcliente)
         Me.Controls.Add(Me.gbempleado)
-        Me.Controls.Add(Me.lblnrodoc)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximumSize = New System.Drawing.Size(521, 602)
-        Me.MinimumSize = New System.Drawing.Size(521, 602)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FVenta"
-        Me.Text = "FVenta"
+        Me.Text = "Venta"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.gbempleado.ResumeLayout(False)
@@ -575,8 +634,14 @@ Partial Class FVenta
         Me.GroupBox5.PerformLayout()
         CType(Me.txtcantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.listado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -626,4 +691,9 @@ Partial Class FVenta
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

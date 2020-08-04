@@ -1,6 +1,9 @@
 ﻿Imports System.Data.SqlClient
 Public Class DCargo
     Inherits Dconexion
+    ' Este clase se encarga de agregar y consultar los cargos disponibles en la base de datos
+
+    ' Esta funcion devuelve un DataTable con la informacion de todos los cargos existentes en la base de datos
     Public Function MostrarCargo() As DataTable
         Try
             conectar()
@@ -24,6 +27,10 @@ Public Class DCargo
             desconectar()
         End Try
     End Function
+
+    ' Esta funcion es la encargada de registrar nuevos cargos en la base de datos
+    ' Recibe por parametros un objeto tipo LCargo, el cual contiene toda la informacion necesaria
+    ' Para realizar el registro en la base de datos.
     Public Function AgregarCargo(ByVal lcargo As LCargo) As Boolean
         Try
             conectar()

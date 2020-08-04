@@ -27,12 +27,16 @@ Partial Class FListadoEmpleados
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.Listado = New System.Windows.Forms.DataGridView()
         Me.txtflag = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnasignar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.Listado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cbobuscar
@@ -90,22 +94,11 @@ Partial Class FListadoEmpleados
         Me.txtflag.Text = "0"
         Me.txtflag.Visible = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label1.Location = New System.Drawing.Point(195, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(301, 31)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Listado de Empleados"
-        '
         'btnasignar
         '
         Me.btnasignar.Image = Global.SistemaVentas.My.Resources.Resources.nuevo
         Me.btnasignar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnasignar.Location = New System.Drawing.Point(12, 357)
+        Me.btnasignar.Location = New System.Drawing.Point(47, 357)
         Me.btnasignar.Name = "btnasignar"
         Me.btnasignar.Size = New System.Drawing.Size(116, 31)
         Me.btnasignar.TabIndex = 9
@@ -137,24 +130,60 @@ Partial Class FListadoEmpleados
         Me.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(670, 43)
+        Me.Panel1.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(201, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(301, 31)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Listado de Empleados"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SistemaVentas.My.Resources.Resources.dibujos_animados_san_jose_76844_12091
+        Me.PictureBox1.Location = New System.Drawing.Point(525, 37)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
+        '
         'FListadoEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(670, 404)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.btnasignar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.Listado)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FListadoEmpleados"
-        Me.Text = "FListadoEmpleados"
+        Me.Text = "ListadoEmpleados"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.Listado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,5 +196,7 @@ Partial Class FListadoEmpleados
     Friend WithEvents Listado As System.Windows.Forms.DataGridView
     Friend WithEvents btnasignar As System.Windows.Forms.Button
     Friend WithEvents txtflag As System.Windows.Forms.TextBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

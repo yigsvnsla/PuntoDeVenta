@@ -107,6 +107,7 @@
     <Compile Include="Logica\LProductos.vb" />
     <Compile Include="Logica\LUsuario.vb" />
     <Compile Include="Logica\LVenta.vb" />
+    <Compile Include="Logica\ModuloObtnerUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -330,6 +331,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ventas_converted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujos-animados-san-jose_76844-1209.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\048-medical1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\046-eye care1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujos-animados-san-jose_76844-12091.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

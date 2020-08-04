@@ -75,3 +75,29 @@ C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVenta
 C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\SistemaVentas.vbproj.GenerateResource.Cache
 C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.cache
 C:\Users\Yigs-Family\Downloads\sistema ventas\sistema\SistemaVentas\SistemaVentas\obj\Debug\RdlCompile.compiled
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.exe
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.xml
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.pdb
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\bin\Debug\SistemaVentas.exe
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\bin\Debug\SistemaVentas.pdb
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\bin\Debug\SistemaVentas.xml
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.vbprojResolveAssemblyReference.cache
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FLogin.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.Resources.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FCargo.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FCategoria.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FCliente.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FEmpleado.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FInicio.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FListadoClientes.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FListadoEmpleados.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FListadoProductos.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FListadoVentas.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FProducto.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FUsuario.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FVenta.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.FComprobante.resources
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\SistemaVentas.vbproj.GenerateResource.Cache
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\RdlCompile.cache
+C:\Users\Yigs-Family\Desktop\PuntoDeVenta-master\SistemaVentas\obj\Debug\RdlCompile.compiled

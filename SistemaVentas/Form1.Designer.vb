@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FLogin
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,11 +27,12 @@ Partial Class Form1
         Me.btniniciar = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblusuario = New System.Windows.Forms.Label()
         Me.lblcontraseña = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -43,7 +44,6 @@ Partial Class Form1
         Me.txtusuario.Name = "txtusuario"
         Me.txtusuario.Size = New System.Drawing.Size(174, 31)
         Me.txtusuario.TabIndex = 0
-        Me.txtusuario.Text = "jchambi"
         '
         'txtcontraseña
         '
@@ -53,7 +53,6 @@ Partial Class Form1
         Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtcontraseña.Size = New System.Drawing.Size(174, 31)
         Me.txtcontraseña.TabIndex = 1
-        Me.txtcontraseña.Text = "123456"
         '
         'btniniciar
         '
@@ -61,7 +60,7 @@ Partial Class Form1
         Me.btniniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btniniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btniniciar.ForeColor = System.Drawing.Color.White
-        Me.btniniciar.Location = New System.Drawing.Point(31, 203)
+        Me.btniniciar.Location = New System.Drawing.Point(49, 182)
         Me.btniniciar.Name = "btniniciar"
         Me.btniniciar.Size = New System.Drawing.Size(97, 38)
         Me.btniniciar.TabIndex = 3
@@ -74,7 +73,7 @@ Partial Class Form1
         Me.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsalir.ForeColor = System.Drawing.Color.White
-        Me.btnsalir.Location = New System.Drawing.Point(147, 203)
+        Me.btnsalir.Location = New System.Drawing.Point(165, 182)
         Me.btnsalir.Name = "btnsalir"
         Me.btnsalir.Size = New System.Drawing.Size(103, 38)
         Me.btnsalir.TabIndex = 3
@@ -89,22 +88,10 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(281, 56)
+        Me.Label1.Size = New System.Drawing.Size(420, 56)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Inicio de Sesión"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label2.Location = New System.Drawing.Point(0, 263)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(281, 40)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "louix chAmbI"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
         'lblusuario
         '
@@ -130,6 +117,16 @@ Partial Class Form1
         Me.lblcontraseña.TabIndex = 8
         Me.lblcontraseña.Text = "Contraseña"
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.SistemaVentas.My.Resources.Resources.dibujos_animados_san_jose_76844_1209
+        Me.PictureBox3.Location = New System.Drawing.Point(224, 57)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(207, 184)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.SistemaVentas.My.Resources.Resources.Converted_file_d49d8510_converted
@@ -150,15 +147,14 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'Form1
+        'FLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(281, 303)
+        Me.ClientSize = New System.Drawing.Size(420, 242)
         Me.Controls.Add(Me.lblcontraseña)
         Me.Controls.Add(Me.lblusuario)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -166,10 +162,12 @@ Partial Class Form1
         Me.Controls.Add(Me.btniniciar)
         Me.Controls.Add(Me.txtcontraseña)
         Me.Controls.Add(Me.txtusuario)
+        Me.Controls.Add(Me.PictureBox3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "FLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -183,8 +181,8 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lblusuario As System.Windows.Forms.Label
     Friend WithEvents lblcontraseña As System.Windows.Forms.Label
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
 End Class

@@ -130,9 +130,9 @@
         listado.ClearSelection()
 
         'ENVIAMOS LOS DATOS DE EL SUBTOTAL , IGV, TOTAL
-        txtsubtotal.Text = "S./ " & FormatNumber((0.82 * Sumar("importe", listado)), 2)
-        txtigv.Text = "S./ " & FormatNumber((0.18 * Sumar("importe", listado)), 2)
-        txttotal.Text = "S./ " & FormatNumber(Sumar("importe", listado), 2).ToString
+        txtsubtotal.Text = "BsS. : " & FormatNumber((0.82 * Sumar("importe", listado)), 2)
+        txtigv.Text = "BsS. : " & FormatNumber((0.18 * Sumar("importe", listado)), 2)
+        txttotal.Text = "BsS. : " & FormatNumber(Sumar("importe", listado), 2).ToString
     End Sub
     Public Sub LimpiarTexbox()
         txtnya.Clear()

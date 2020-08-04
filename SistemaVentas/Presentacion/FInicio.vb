@@ -3,14 +3,10 @@
     Private Sub FInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PanelContenido(FListadoVentas)
         Timer1.Start()
-        lblequipo.Text = (Environment.UserName).ToUpper
-        lbldia.Text = Now.Date
+        LabelHoraFecha.Text = Now.Date
     End Sub
 
-
     Public Sub PanelContenido(ByVal Formulario As Form)
-
-
         Panel1.Controls.Clear()
         Formulario.TopLevel = False
         Formulario.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -23,8 +19,6 @@
                 cajatexto.Clear()
             End If
         Next
-
-
     End Sub
 
     Private Sub btnclientes_Click(sender As Object, e As EventArgs) Handles btnclientes.Click
@@ -45,8 +39,7 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        lblhora.Text = TimeOfDay
-        lbldia.Text = Now.Date
+        LabelHoraFecha.Text = Now.Date & " " & TimeOfDay
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click

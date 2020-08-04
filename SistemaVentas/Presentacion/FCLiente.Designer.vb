@@ -22,7 +22,6 @@ Partial Class FCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtId = New System.Windows.Forms.TextBox()
         Me.txtDni = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
@@ -35,19 +34,18 @@ Partial Class FCliente
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'txtId
-        '
-        Me.txtId.Location = New System.Drawing.Point(145, 142)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(56, 20)
-        Me.txtId.TabIndex = 0
-        Me.txtId.Visible = False
         '
         'txtDni
         '
-        Me.txtDni.Location = New System.Drawing.Point(12, 181)
+        Me.txtDni.Location = New System.Drawing.Point(20, 198)
         Me.txtDni.MaxLength = 8
         Me.txtDni.Name = "txtDni"
         Me.txtDni.Size = New System.Drawing.Size(110, 20)
@@ -55,29 +53,29 @@ Partial Class FCliente
         '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(12, 64)
+        Me.txtApellido.Location = New System.Drawing.Point(20, 81)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(189, 20)
         Me.txtApellido.TabIndex = 2
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(12, 25)
+        Me.txtNombre.Location = New System.Drawing.Point(20, 42)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(189, 20)
         Me.txtNombre.TabIndex = 1
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(12, 142)
-        Me.txtTelefono.MaxLength = 9
+        Me.txtTelefono.Location = New System.Drawing.Point(20, 159)
+        Me.txtTelefono.MaxLength = 11
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(110, 20)
         Me.txtTelefono.TabIndex = 4
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(12, 103)
+        Me.txtDireccion.Location = New System.Drawing.Point(20, 120)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(189, 20)
         Me.txtDireccion.TabIndex = 3
@@ -85,7 +83,7 @@ Partial Class FCliente
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 165)
+        Me.Label1.Location = New System.Drawing.Point(17, 182)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(29, 13)
         Me.Label1.TabIndex = 6
@@ -94,7 +92,7 @@ Partial Class FCliente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 48)
+        Me.Label2.Location = New System.Drawing.Point(17, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)
         Me.Label2.TabIndex = 7
@@ -103,7 +101,7 @@ Partial Class FCliente
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(9, 9)
+        Me.Label3.Location = New System.Drawing.Point(17, 26)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 7
@@ -112,7 +110,7 @@ Partial Class FCliente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 87)
+        Me.Label4.Location = New System.Drawing.Point(17, 104)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 7
@@ -121,7 +119,7 @@ Partial Class FCliente
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(9, 126)
+        Me.Label6.Location = New System.Drawing.Point(17, 143)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 7
@@ -129,7 +127,7 @@ Partial Class FCliente
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(12, 217)
+        Me.btnAceptar.Location = New System.Drawing.Point(20, 234)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 6
@@ -138,41 +136,82 @@ Partial Class FCliente
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(126, 217)
+        Me.btnSalir.Location = New System.Drawing.Point(134, 234)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 7
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
+        'txtId
+        '
+        Me.txtId.Location = New System.Drawing.Point(136, 159)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(56, 20)
+        Me.txtId.TabIndex = 0
+        Me.txtId.Visible = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.btnSalir)
+        Me.GroupBox1.Controls.Add(Me.txtId)
+        Me.GroupBox1.Controls.Add(Me.btnAceptar)
+        Me.GroupBox1.Controls.Add(Me.txtDni)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtApellido)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txtNombre)
+        Me.GroupBox1.Controls.Add(Me.txtTelefono)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtDireccion)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(221, 283)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos Clientes"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SistemaVentas.My.Resources.Resources._046_eye_care
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 106)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(110, 94)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Teal
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(234, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(124, 307)
+        Me.Panel1.TabIndex = 10
+        '
         'FCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(232, 257)
-        Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.btnAceptar)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtDireccion)
-        Me.Controls.Add(Me.txtTelefono)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.txtApellido)
-        Me.Controls.Add(Me.txtDni)
-        Me.Controls.Add(Me.txtId)
+        Me.ClientSize = New System.Drawing.Size(358, 307)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
-        Me.MaximumSize = New System.Drawing.Size(248, 291)
-        Me.MinimumSize = New System.Drawing.Size(248, 291)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FCliente"
         Me.Text = "<< Mantenimiento de Clientes >>"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtId As System.Windows.Forms.TextBox
     Friend WithEvents txtDni As System.Windows.Forms.TextBox
     Friend WithEvents txtApellido As System.Windows.Forms.TextBox
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
@@ -185,4 +224,8 @@ Partial Class FCliente
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
+    Friend WithEvents txtId As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class FLogin
     ' declaramos dos variables que trabajaran en conjunto 
     ' valores se encargara de almacenar los datos ingresados
     Dim valores As New LUsuario
@@ -10,16 +10,24 @@
 
     Private Sub btniniciar_Click(sender As Object, e As EventArgs) Handles btniniciar.Click
         Try
-
             ' se almacena los datos de los TexBox en la variable valores
             valores._usuario = txtusuario.Text
             valores._contraseña = txtcontraseña.Text
-
             ' Con los datos almacenados, se llama la funcion AccederUsuario, la cual recibe por parametro la variable usuario que es un LUsuario
             If funciones.AccederUsuario(valores) Then
-                ' Si los datos ingresados son correctos, prcedemos a abrir el Formulario de inicio "FInicio"
-                FInicio.Show()
-                Me.Hide()
+                ' Si los datos ingresados son correctos, prcedemos a abrir el Formulario"
+                If x(obtenerRango(txtusuario.Text)) = 2 Then
+                    'Empleado
+                    FListadoVentas.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedSingle
+                    FVenta.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedSingle
+                    FListadoVentas.Show()
+                    Me.Hide()
+
+                ElseIf x(obtenerRango(txtusuario.Text)) = 1 Then
+                    'administrador
+                    FInicio.Show()
+                    Me.Hide()
+                End If
 
             Else
                 MsgBox("Usuario o Contraseña Incorrecta", MsgBoxStyle.Exclamation, "Mensaje del Sistema")

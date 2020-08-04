@@ -1,9 +1,11 @@
 ﻿
 Public Class FEmpleado
+
     Public idcargo As Integer
     Dim valores As New LEmpleados
     Dim funciones As New DEmpleado
     Dim funcionesca As New DCargo
+
     Private Sub FEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cargarcargos()
     End Sub

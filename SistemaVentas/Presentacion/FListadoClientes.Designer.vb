@@ -28,10 +28,14 @@ Partial Class FListadoClientes
         Me.Listado = New System.Windows.Forms.DataGridView()
         Me.txtflag = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.Listado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cbobuscar
@@ -93,12 +97,33 @@ Partial Class FListadoClientes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label1.Location = New System.Drawing.Point(193, 14)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(201, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(264, 31)
-        Me.Label1.TabIndex = 11
+        Me.Label1.TabIndex = 12
         Me.Label1.Text = "Listado de Clientes"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(667, 43)
+        Me.Panel1.TabIndex = 13
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SistemaVentas.My.Resources.Resources.dibujos_animados_san_jose_76844_12091
+        Me.PictureBox1.Location = New System.Drawing.Point(523, 37)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 14
+        Me.PictureBox1.TabStop = False
         '
         'btnEditar
         '
@@ -130,17 +155,21 @@ Partial Class FListadoClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(667, 404)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.Listado)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FListadoClientes"
-        Me.Text = "FListadoClientes"
+        Me.Text = "ListadoClientes"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.Listado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,4 +182,6 @@ Partial Class FListadoClientes
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents txtflag As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
